@@ -1,0 +1,520 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81CFC3D0-4BA9-406B-910A-5E75DC31A9BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>IceSoft.My.MyApplication</StartupObject>
+    <RootNamespace>IceSoft</RootNamespace>
+    <AssemblyName>IceSoft</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>IceSoft.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\bin\Release\</OutputPath>
+    <DocumentationFile>IceSoft.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon_1_2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Materiais\Estoque.Designer.vb">
+      <DependentUpon>Estoque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Materiais\Estoque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produtos\Componentes.vb" />
+    <Compile Include="Produtos\ImportProdutos.Designer.vb">
+      <DependentUpon>ImportProdutos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produtos\ImportProdutos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produtos\UpdateProdutos.Designer.vb">
+      <DependentUpon>UpdateProdutos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produtos\UpdateProdutos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\Cliente.Designer.vb">
+      <DependentUpon>Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\ListaClientes.Designer.vb">
+      <DependentUpon>ListaClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\ListaClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracoes\Configuracao.Designer.vb">
+      <DependentUpon>Configuracao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracoes\Configuracao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracoes\ConfigTipoMaterial.Designer.vb">
+      <DependentUpon>ConfigTipoMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracoes\ConfigTipoMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracoes\ConfigUsuario.Designer.vb">
+      <DependentUpon>ConfigUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracoes\ConfigUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracoes\ConfigTipoProduto.Designer.vb">
+      <DependentUpon>ConfigTipoProduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracoes\ConfigTipoProduto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produtos\ListaProdutos.Designer.vb">
+      <DependentUpon>ListaProdutos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produtos\ListaProdutos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produtos\BuscarMaterial.Designer.vb">
+      <DependentUpon>BuscarMaterial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produtos\BuscarMaterial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produtos\Produto.Designer.vb">
+      <DependentUpon>Produto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Produtos\Produto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedores\ImportarFornecedor.Designer.vb">
+      <DependentUpon>ImportarFornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedores\ImportarFornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaPrincipal.Designer.vb">
+      <DependentUpon>TelaPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedores\Fornecedor.Designer.vb">
+      <DependentUpon>Fornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedores\Fornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedores\ListaFornecedores.Designer.vb">
+      <DependentUpon>ListaFornecedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedores\ListaFornecedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\SelecionarRelatorio.Designer.vb">
+      <DependentUpon>SelecionarRelatorio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\SelecionarRelatorio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orcamento\FinalizarPedido.Designer.vb">
+      <DependentUpon>FinalizarPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Orcamento\FinalizarPedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Report.designer.vb">
+      <DependentUpon>Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Expirado.Designer.vb">
+      <DependentUpon>Expirado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Expirado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\VisualizaArquivoImportado.Designer.vb">
+      <DependentUpon>VisualizaArquivoImportado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\VisualizaArquivoImportado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicializar.Designer.vb">
+      <DependentUpon>Inicializar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inicializar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Licenca.Designer.vb">
+      <DependentUpon>Licenca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Licenca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\ProcessoImportacao.Designer.vb">
+      <DependentUpon>ProcessoImportacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ProcessoImportacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos\ListaPedidos.Designer.vb">
+      <DependentUpon>ListaPedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos\ListaPedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaLogin.Designer.vb">
+      <DependentUpon>TelaLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TelaLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Materiais\Material.Designer.vb">
+      <DependentUpon>Material.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Materiais\Material.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Materiais\ListaMateriais.Designer.vb">
+      <DependentUpon>ListaMateriais.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Materiais\ListaMateriais.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Globals.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Orcamento\BuscarCliente.Designer.vb">
+      <DependentUpon>BuscarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Orcamento\BuscarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orcamento\PedidoOk.Designer.vb">
+      <DependentUpon>PedidoOk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Orcamento\PedidoOk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orcamento\Orcamento.Designer.vb">
+      <DependentUpon>Orcamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Orcamento\Orcamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracoes\ConfigTipoUsuario.Designer.vb">
+      <DependentUpon>ConfigTipoUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracoes\ConfigTipoUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatalogoProdutos\DadosProduto.Designer.vb">
+      <DependentUpon>DadosProduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogoProdutos\DadosProduto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CatalogoProdutos\CatalogoProdutos.Designer.vb">
+      <DependentUpon>CatalogoProdutos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CatalogoProdutos\CatalogoProdutos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\TipoImportacao.Designer.vb">
+      <DependentUpon>TipoImportacao.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\TipoImportacao.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\VisualizaProduto.Designer.vb">
+      <DependentUpon>VisualizaProduto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\VisualizaProduto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CatalogoProdutos\CatalogoProdutos.resx">
+      <DependentUpon>CatalogoProdutos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Materiais\Estoque.resx">
+      <DependentUpon>Estoque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produtos\ImportProdutos.resx">
+      <DependentUpon>ImportProdutos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produtos\UpdateProdutos.resx">
+      <DependentUpon>UpdateProdutos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\Cliente.resx">
+      <DependentUpon>Cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\ListaClientes.resx">
+      <DependentUpon>ListaClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracoes\Configuracao.resx">
+      <DependentUpon>Configuracao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracoes\ConfigTipoMaterial.resx">
+      <DependentUpon>ConfigTipoMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracoes\ConfigUsuario.resx">
+      <DependentUpon>ConfigUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracoes\ConfigTipoProduto.resx">
+      <DependentUpon>ConfigTipoProduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produtos\ListaProdutos.resx">
+      <DependentUpon>ListaProdutos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produtos\BuscarMaterial.resx">
+      <DependentUpon>BuscarMaterial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produtos\Produto.resx">
+      <DependentUpon>Produto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedores\ImportarFornecedor.resx">
+      <DependentUpon>ImportarFornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaPrincipal.resx">
+      <DependentUpon>TelaPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedores\Fornecedor.resx">
+      <DependentUpon>Fornecedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedores\ListaFornecedores.resx">
+      <DependentUpon>ListaFornecedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\SelecionarRelatorio.resx">
+      <DependentUpon>SelecionarRelatorio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orcamento\FinalizarPedido.resx">
+      <DependentUpon>FinalizarPedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Report.resx">
+      <DependentUpon>Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Expirado.resx">
+      <DependentUpon>Expirado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\VisualizaArquivoImportado.resx">
+      <DependentUpon>VisualizaArquivoImportado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Licenca.resx">
+      <DependentUpon>Licenca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\ProcessoImportacao.resx">
+      <DependentUpon>ProcessoImportacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos\ListaPedidos.resx">
+      <DependentUpon>ListaPedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaLogin.resx">
+      <DependentUpon>TelaLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Materiais\Material.resx">
+      <DependentUpon>Material.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Materiais\ListaMateriais.resx">
+      <DependentUpon>ListaMateriais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orcamento\BuscarCliente.resx">
+      <DependentUpon>BuscarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orcamento\PedidoOk.resx">
+      <DependentUpon>PedidoOk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orcamento\Orcamento.resx">
+      <DependentUpon>Orcamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracoes\ConfigTipoUsuario.resx">
+      <DependentUpon>ConfigTipoUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CatalogoProdutos\DadosProduto.resx">
+      <DependentUpon>DadosProduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\TipoImportacao.resx">
+      <DependentUpon>TipoImportacao.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\VisualizaProduto.resx">
+      <DependentUpon>VisualizaProduto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicializar.resx">
+      <DependentUpon>Inicializar.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoIceSoft.png" />
+    <None Include="Resources\loader.gif" />
+    <None Include="Resources\warning.png" />
+    <None Include="Resources\inicio.png" />
+    <None Include="Resources\image.png" />
+    <None Include="Resources\ajax-loading_2x.gif" />
+    <None Include="Resources\fits.png" />
+    <None Include="Resources\fiti.png" />
+    <None Include="Resources\fite.png" />
+    <None Include="Resources\fitd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logotipo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon_1.ico" />
+    <Content Include="icon_1_2.ico" />
+    <None Include="Resources\view.png" />
+    <None Include="Resources\redcross.png" />
+    <None Include="Resources\ESPECIAL.png" />
+    <None Include="Resources\logotipo1.png" />
+    <None Include="Resources\checkmark.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\ajax-loader.gif" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

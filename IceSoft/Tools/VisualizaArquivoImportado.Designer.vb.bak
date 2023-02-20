@@ -1,0 +1,563 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class FrmFileExcel
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.lbForam = New System.Windows.Forms.Label()
+        Me.btnContinuar = New System.Windows.Forms.Button()
+        Me.CbPlanilhas = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.DtvExcel = New System.Windows.Forms.DataGridView()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.TxtValorEstoque = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.TxtEstoque = New System.Windows.Forms.TextBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.TxtData = New System.Windows.Forms.TextBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.TxtCodForn = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.TxtPreview = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.TxtParam3 = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.TxtParam2 = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.TxtParam1 = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ChkTab = New System.Windows.Forms.RadioButton()
+        Me.ChkPtVirgula = New System.Windows.Forms.RadioButton()
+        Me.TxtValor = New System.Windows.Forms.TextBox()
+        Me.TxtValorFinal = New System.Windows.Forms.TextBox()
+        Me.TxtFrete = New System.Windows.Forms.TextBox()
+        Me.TxtIPI = New System.Windows.Forms.TextBox()
+        Me.TxtCategoria = New System.Windows.Forms.TextBox()
+        Me.TxtFornecedor = New System.Windows.Forms.TextBox()
+        Me.TxtDescricao = New System.Windows.Forms.TextBox()
+        Me.TxtCodigo = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        CType(Me.DtvExcel, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'lbForam
+        '
+        Me.lbForam.AutoSize = True
+        Me.lbForam.Location = New System.Drawing.Point(9, 10)
+        Me.lbForam.Name = "lbForam"
+        Me.lbForam.Size = New System.Drawing.Size(133, 15)
+        Me.lbForam.TabIndex = 5
+        Me.lbForam.Text = "Foram encontradas ..."
+        '
+        'btnContinuar
+        '
+        Me.btnContinuar.DialogResult = System.Windows.Forms.DialogResult.OK
+        Me.btnContinuar.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnContinuar.Location = New System.Drawing.Point(868, 12)
+        Me.btnContinuar.Name = "btnContinuar"
+        Me.btnContinuar.Size = New System.Drawing.Size(87, 61)
+        Me.btnContinuar.TabIndex = 4
+        Me.btnContinuar.Text = "Continuar"
+        Me.btnContinuar.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnContinuar.UseVisualStyleBackColor = True
+        '
+        'CbPlanilhas
+        '
+        Me.CbPlanilhas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CbPlanilhas.FormattingEnabled = True
+        Me.CbPlanilhas.Location = New System.Drawing.Point(12, 50)
+        Me.CbPlanilhas.Name = "CbPlanilhas"
+        Me.CbPlanilhas.Size = New System.Drawing.Size(233, 23)
+        Me.CbPlanilhas.TabIndex = 3
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(9, 31)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(216, 15)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "Selecione a planilha a ser importada"
+        '
+        'DtvExcel
+        '
+        Me.DtvExcel.AllowUserToAddRows = False
+        Me.DtvExcel.AllowUserToDeleteRows = False
+        Me.DtvExcel.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.DtvExcel.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.DtvExcel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DtvExcel.Location = New System.Drawing.Point(228, 79)
+        Me.DtvExcel.Name = "DtvExcel"
+        Me.DtvExcel.ReadOnly = True
+        Me.DtvExcel.Size = New System.Drawing.Size(739, 505)
+        Me.DtvExcel.TabIndex = 7
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = Global.IceSoft.My.Resources.Resources.ajax_loading_2x
+        Me.PictureBox1.Location = New System.Drawing.Point(251, 43)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(32, 30)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 8
+        Me.PictureBox1.TabStop = False
+        Me.PictureBox1.Visible = False
+        '
+        'TxtValorEstoque
+        '
+        Me.TxtValorEstoque.Location = New System.Drawing.Point(126, 559)
+        Me.TxtValorEstoque.Name = "TxtValorEstoque"
+        Me.TxtValorEstoque.Size = New System.Drawing.Size(96, 22)
+        Me.TxtValorEstoque.TabIndex = 89
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(9, 560)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(69, 18)
+        Me.Label10.TabIndex = 88
+        Me.Label10.Text = "Valor Est."
+        '
+        'TxtEstoque
+        '
+        Me.TxtEstoque.Location = New System.Drawing.Point(126, 530)
+        Me.TxtEstoque.Name = "TxtEstoque"
+        Me.TxtEstoque.Size = New System.Drawing.Size(96, 22)
+        Me.TxtEstoque.TabIndex = 87
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.Transparent
+        Me.Label14.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(9, 529)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(62, 18)
+        Me.Label14.TabIndex = 86
+        Me.Label14.Text = "Estoque"
+        '
+        'TxtData
+        '
+        Me.TxtData.Location = New System.Drawing.Point(126, 504)
+        Me.TxtData.Name = "TxtData"
+        Me.TxtData.Size = New System.Drawing.Size(96, 22)
+        Me.TxtData.TabIndex = 85
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.Transparent
+        Me.Label15.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(10, 503)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(40, 18)
+        Me.Label15.TabIndex = 84
+        Me.Label15.Text = "Data"
+        '
+        'TxtCodForn
+        '
+        Me.TxtCodForn.Location = New System.Drawing.Point(126, 477)
+        Me.TxtCodForn.Name = "TxtCodForn"
+        Me.TxtCodForn.Size = New System.Drawing.Size(96, 22)
+        Me.TxtCodForn.TabIndex = 83
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.Transparent
+        Me.Label16.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(9, 477)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(76, 18)
+        Me.Label16.TabIndex = 82
+        Me.Label16.Text = "Cod. Forn."
+        '
+        'TxtPreview
+        '
+        Me.TxtPreview.Location = New System.Drawing.Point(126, 449)
+        Me.TxtPreview.Name = "TxtPreview"
+        Me.TxtPreview.Size = New System.Drawing.Size(96, 22)
+        Me.TxtPreview.TabIndex = 81
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
+        Me.Label13.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(9, 448)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(60, 18)
+        Me.Label13.TabIndex = 80
+        Me.Label13.Text = "Preview"
+        '
+        'TxtParam3
+        '
+        Me.TxtParam3.Location = New System.Drawing.Point(126, 420)
+        Me.TxtParam3.Name = "TxtParam3"
+        Me.TxtParam3.Size = New System.Drawing.Size(96, 22)
+        Me.TxtParam3.TabIndex = 79
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.Transparent
+        Me.Label12.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(9, 419)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(90, 18)
+        Me.Label12.TabIndex = 78
+        Me.Label12.Text = "Parametro 3"
+        '
+        'TxtParam2
+        '
+        Me.TxtParam2.Location = New System.Drawing.Point(126, 392)
+        Me.TxtParam2.Name = "TxtParam2"
+        Me.TxtParam2.Size = New System.Drawing.Size(96, 22)
+        Me.TxtParam2.TabIndex = 77
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(10, 391)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(90, 18)
+        Me.Label11.TabIndex = 76
+        Me.Label11.Text = "Parametro 2"
+        '
+        'TxtParam1
+        '
+        Me.TxtParam1.Location = New System.Drawing.Point(126, 365)
+        Me.TxtParam1.Name = "TxtParam1"
+        Me.TxtParam1.Size = New System.Drawing.Size(96, 22)
+        Me.TxtParam1.TabIndex = 75
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(9, 365)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(90, 18)
+        Me.Label9.TabIndex = 74
+        Me.Label9.Text = "Parametro 1"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.ChkTab)
+        Me.GroupBox1.Controls.Add(Me.ChkPtVirgula)
+        Me.GroupBox1.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 79)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(213, 56)
+        Me.GroupBox1.TabIndex = 73
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Tipo de separador"
+        '
+        'ChkTab
+        '
+        Me.ChkTab.AutoSize = True
+        Me.ChkTab.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ChkTab.Location = New System.Drawing.Point(106, 21)
+        Me.ChkTab.Name = "ChkTab"
+        Me.ChkTab.Size = New System.Drawing.Size(53, 22)
+        Me.ChkTab.TabIndex = 2
+        Me.ChkTab.TabStop = True
+        Me.ChkTab.Text = "TAB"
+        Me.ChkTab.UseVisualStyleBackColor = True
+        '
+        'ChkPtVirgula
+        '
+        Me.ChkPtVirgula.AutoSize = True
+        Me.ChkPtVirgula.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ChkPtVirgula.Location = New System.Drawing.Point(11, 21)
+        Me.ChkPtVirgula.Name = "ChkPtVirgula"
+        Me.ChkPtVirgula.Size = New System.Drawing.Size(29, 22)
+        Me.ChkPtVirgula.TabIndex = 1
+        Me.ChkPtVirgula.TabStop = True
+        Me.ChkPtVirgula.Text = ";"
+        Me.ChkPtVirgula.UseVisualStyleBackColor = True
+        '
+        'TxtValor
+        '
+        Me.TxtValor.Location = New System.Drawing.Point(126, 253)
+        Me.TxtValor.Name = "TxtValor"
+        Me.TxtValor.Size = New System.Drawing.Size(96, 22)
+        Me.TxtValor.TabIndex = 68
+        '
+        'TxtValorFinal
+        '
+        Me.TxtValorFinal.Location = New System.Drawing.Point(126, 337)
+        Me.TxtValorFinal.Name = "TxtValorFinal"
+        Me.TxtValorFinal.Size = New System.Drawing.Size(96, 22)
+        Me.TxtValorFinal.TabIndex = 72
+        '
+        'TxtFrete
+        '
+        Me.TxtFrete.Location = New System.Drawing.Point(126, 309)
+        Me.TxtFrete.Name = "TxtFrete"
+        Me.TxtFrete.Size = New System.Drawing.Size(96, 22)
+        Me.TxtFrete.TabIndex = 71
+        '
+        'TxtIPI
+        '
+        Me.TxtIPI.Location = New System.Drawing.Point(126, 281)
+        Me.TxtIPI.Name = "TxtIPI"
+        Me.TxtIPI.Size = New System.Drawing.Size(96, 22)
+        Me.TxtIPI.TabIndex = 69
+        '
+        'TxtCategoria
+        '
+        Me.TxtCategoria.Location = New System.Drawing.Point(126, 225)
+        Me.TxtCategoria.Name = "TxtCategoria"
+        Me.TxtCategoria.Size = New System.Drawing.Size(96, 22)
+        Me.TxtCategoria.TabIndex = 65
+        '
+        'TxtFornecedor
+        '
+        Me.TxtFornecedor.Location = New System.Drawing.Point(126, 197)
+        Me.TxtFornecedor.Name = "TxtFornecedor"
+        Me.TxtFornecedor.Size = New System.Drawing.Size(96, 22)
+        Me.TxtFornecedor.TabIndex = 63
+        '
+        'TxtDescricao
+        '
+        Me.TxtDescricao.Location = New System.Drawing.Point(126, 169)
+        Me.TxtDescricao.Name = "TxtDescricao"
+        Me.TxtDescricao.Size = New System.Drawing.Size(96, 22)
+        Me.TxtDescricao.TabIndex = 61
+        '
+        'TxtCodigo
+        '
+        Me.TxtCodigo.Location = New System.Drawing.Point(126, 141)
+        Me.TxtCodigo.Name = "TxtCodigo"
+        Me.TxtCodigo.Size = New System.Drawing.Size(96, 22)
+        Me.TxtCodigo.TabIndex = 60
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(9, 254)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(43, 18)
+        Me.Label8.TabIndex = 70
+        Me.Label8.Text = "Valor"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(9, 338)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(78, 18)
+        Me.Label7.TabIndex = 67
+        Me.Label7.Text = "Valor Final"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(9, 309)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(42, 18)
+        Me.Label6.TabIndex = 66
+        Me.Label6.Text = "Frete"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(9, 281)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(24, 18)
+        Me.Label5.TabIndex = 64
+        Me.Label5.Text = "IPI"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(6, 226)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(72, 18)
+        Me.Label4.TabIndex = 62
+        Me.Label4.Text = "Categoria"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(9, 198)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(85, 18)
+        Me.Label3.TabIndex = 59
+        Me.Label3.Text = "Fornecedor"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(9, 170)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(72, 18)
+        Me.Label1.TabIndex = 58
+        Me.Label1.Text = "Descrição"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
+        Me.Label17.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(9, 142)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(56, 18)
+        Me.Label17.TabIndex = 57
+        Me.Label17.Text = "Codigo"
+        '
+        'FrmFileExcel
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(967, 588)
+        Me.Controls.Add(Me.TxtValorEstoque)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.TxtEstoque)
+        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.TxtData)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.TxtCodForn)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.TxtPreview)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.TxtParam3)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.TxtParam2)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.TxtParam1)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.TxtValor)
+        Me.Controls.Add(Me.TxtValorFinal)
+        Me.Controls.Add(Me.TxtFrete)
+        Me.Controls.Add(Me.TxtIPI)
+        Me.Controls.Add(Me.TxtCategoria)
+        Me.Controls.Add(Me.TxtFornecedor)
+        Me.Controls.Add(Me.TxtDescricao)
+        Me.Controls.Add(Me.TxtCodigo)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.DtvExcel)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lbForam)
+        Me.Controls.Add(Me.btnContinuar)
+        Me.Controls.Add(Me.CbPlanilhas)
+        Me.Font = New System.Drawing.Font("Eras Medium ITC", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
+        Me.Name = "FrmFileExcel"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Preview do arquivo"
+        CType(Me.DtvExcel, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents lbForam As System.Windows.Forms.Label
+    Friend WithEvents btnContinuar As System.Windows.Forms.Button
+    Friend WithEvents CbPlanilhas As System.Windows.Forms.ComboBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents DtvExcel As System.Windows.Forms.DataGridView
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents TxtValorEstoque As TextBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents TxtEstoque As TextBox
+    Friend WithEvents Label14 As Label
+    Friend WithEvents TxtData As TextBox
+    Friend WithEvents Label15 As Label
+    Friend WithEvents TxtCodForn As TextBox
+    Friend WithEvents Label16 As Label
+    Friend WithEvents TxtPreview As TextBox
+    Friend WithEvents Label13 As Label
+    Friend WithEvents TxtParam3 As TextBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents TxtParam2 As TextBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents TxtParam1 As TextBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents ChkTab As RadioButton
+    Friend WithEvents ChkPtVirgula As RadioButton
+    Friend WithEvents TxtValor As TextBox
+    Friend WithEvents TxtValorFinal As TextBox
+    Friend WithEvents TxtFrete As TextBox
+    Friend WithEvents TxtIPI As TextBox
+    Friend WithEvents TxtCategoria As TextBox
+    Friend WithEvents TxtFornecedor As TextBox
+    Friend WithEvents TxtDescricao As TextBox
+    Friend WithEvents TxtCodigo As TextBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label17 As Label
+End Class
